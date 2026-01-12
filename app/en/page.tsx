@@ -30,14 +30,14 @@ export default function HomeEN() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "CM Shoe Clean",
-            image: "https://cmshoeclean.com/og.jpg",
+            image: "https://www.cmshoeclean.com/og.jpg",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Chiang Mai",
               addressCountry: "TH",
             },
             telephone: "+66953620244",
-            url: "https://cmshoeclean.com/en",
+            url: "https://www.cmshoeclean.com/en",
             sameAs: [
               "https://www.facebook.com/ซักเกิบแอนด์สปา",
               "https://line.me/R/ti/p/@708dfith",
