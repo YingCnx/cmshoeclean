@@ -6,7 +6,16 @@ export const metadata: Metadata = {
   title: "Shoe Cleaning Service in Chiang Mai | CM Shoe Clean",
   description:
     "Professional shoe cleaning and shoe care service in Chiang Mai. Established since 2019. Free pick-up & delivery within Chiang Mai city. Nationwide shipping available.",
+  alternates: {
+    canonical: "/en",
+    languages: {
+      "th": "/",
+      "en": "/en",
+      "x-default": "/",
+    },
+  },
 };
+
 
 export default function HomeEN() {
   return (
@@ -37,6 +46,7 @@ export default function HomeEN() {
         }}
       />
 
+        
       {/* HERO */}
       <section className="min-h-[90vh] flex">
         {/* Image */}

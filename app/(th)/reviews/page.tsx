@@ -1,4 +1,14 @@
 import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "รีวิวร้านซักรองเท้า เชียงใหม่ | ลูกค้าจริง | ซักเกิบแอนด์สปา",
+  description:
+    "รีวิวจากลูกค้าจริงของร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ซักเกิบแอนด์สปา การันตีคุณภาพ บริการรับ–ส่ง ฟรีในเขตเมืองเชียงใหม่",
+  alternates: {
+    canonical: "/reviews",
+  },
+};
 
 export default function ReviewsPage() {
   return (
@@ -13,8 +23,8 @@ export default function ReviewsPage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "ซักเกิบแอนด์สปา (CM Shoe Clean)",
-            url: "https://cmshoeclean.com/reviews",
-            image: "https://cmshoeclean.com/og.jpg",
+            url: "https://www.cmshoeclean.com/reviews",
+            image: "https://www.cmshoeclean.com/og.jpg",
             telephone: "0953620244",
             address: {
               "@type": "PostalAddress",

@@ -1,5 +1,15 @@
 import Image from "next/image";
 import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "บริการซักรองเท้า เชียงใหม่ | สปารองเท้า | ซักเกิบแอนด์สปา",
+  description:
+    "บริการซักรองเท้าและสปารองเท้าในเชียงใหม่ ซักรองเท้าผ้าใบ หนัง หนังกลับ รองเท้าแบรนด์เนม พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่",
+  alternates: {
+    canonical: "/services",
+  },
+};
 
 export default function ServicesPage() {
   return (

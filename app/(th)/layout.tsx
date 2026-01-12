@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ThaiLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       {/* ================= Header ================= */}
@@ -14,17 +19,24 @@ export default function ThaiLayout({
           <div className="leading-tight">
             <Link
               href="/"
-              className="block text-2xl font-extrabold tracking-tight text-brand-primary"
+              className="block text-xl sm:text-2xl font-extrabold tracking-tight text-brand-primary"
             >
               ซักเกิบแอนด์สปา
-              <span className="block text-base font-semibold text-brand-accent">
+
+              {/* Desktop subtitle */}
+              <span className="hidden sm:block text-base font-semibold text-brand-accent">
+                CM Shoe Clean
+              </span>
+
+              {/* Mobile subtitle */}
+              <span className="block sm:hidden text-sm font-semibold text-brand-accent">
                 CM Shoe Clean
               </span>
             </Link>
           </div>
 
-          {/* Navigation + Language */}
-          <div className="flex items-center gap-6">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-6">
             <nav className="flex gap-6 text-sm">
               <Link href="/">Home</Link>
               <Link href="/services">Services</Link>
@@ -33,7 +45,7 @@ export default function ThaiLayout({
               <Link href="/contact">Contact</Link>
             </nav>
 
-            {/* Language Switcher */}
+            {/* Language Switcher (Desktop) */}
             <div className="flex items-center gap-3 text-sm border-l border-slate-300 pl-4">
               <span className="font-medium text-brand-primary">TH</span>
               <span className="text-slate-400">|</span>
@@ -42,7 +54,46 @@ export default function ThaiLayout({
               </Link>
             </div>
           </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-brand-primary text-2xl"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
         </div>
+
+        {/* ================= Mobile Menu ================= */}
+        {open && (
+          <div className="md:hidden bg-background border-t border-brand-soft">
+            <nav className="flex flex-col px-6 py-4 gap-4 text-sm">
+              <Link href="/" onClick={() => setOpen(false)}>
+                Home
+              </Link>
+              <Link href="/services" onClick={() => setOpen(false)}>
+                Services
+              </Link>
+              <Link href="/gallery" onClick={() => setOpen(false)}>
+                Gallery
+              </Link>
+              <Link href="/reviews" onClick={() => setOpen(false)}>
+                Reviews
+              </Link>
+              <Link href="/contact" onClick={() => setOpen(false)}>
+                Contact
+              </Link>
+
+              {/* Language Switcher (Mobile) */}
+              <div className="pt-4 border-t flex gap-3">
+                <span className="font-medium text-brand-primary">TH</span>
+                <span className="text-slate-400">|</span>
+                <Link href="/en">EN</Link>
+              </div>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* ================= Main ================= */}

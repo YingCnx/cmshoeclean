@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://cmshoeclean.com/sitemap.xml",
+    sitemap: "https://www.cmshoeclean.com/sitemap.xml",
   };
 }

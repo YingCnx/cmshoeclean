@@ -1,26 +1,56 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://www.cmshoeclean.com";
+  const lastModified = new Date();
+
   return [
+    // ======================
+    // TH pages
+    // ======================
     {
-      url: "https://cmshoeclean.com/",
-      lastModified: new Date(),
+      url: `${baseUrl}/`,
+      lastModified,
     },
     {
-      url: "https://cmshoeclean.com/services",
-      lastModified: new Date(),
+      url: `${baseUrl}/services`,
+      lastModified,
     },
     {
-      url: "https://cmshoeclean.com/gallery",
-      lastModified: new Date(),
+      url: `${baseUrl}/gallery`,
+      lastModified,
     },
     {
-      url: "https://cmshoeclean.com/reviews",
-      lastModified: new Date(),
+      url: `${baseUrl}/reviews`,
+      lastModified,
     },
     {
-      url: "https://cmshoeclean.com/contact",
-      lastModified: new Date(),
+      url: `${baseUrl}/contact`,
+      lastModified,
+    },
+
+    // ======================
+    // EN pages
+    // ======================
+    {
+      url: `${baseUrl}/en`,
+      lastModified,
+    },
+    {
+      url: `${baseUrl}/en/services`,
+      lastModified,
+    },
+    {
+      url: `${baseUrl}/en/gallery`,
+      lastModified,
+    },
+    {
+      url: `${baseUrl}/en/reviews`,
+      lastModified,
+    },
+    {
+      url: `${baseUrl}/en/contact`,
+      lastModified,
     },
   ];
 }

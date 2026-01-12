@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "ซักรองเท้า เชียงใหม่ | สปารองเท้า เชียงใหม่ | ซักเกิบแอนด์สปา",
   description:
     "ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลโดยผู้เชี่ยวชาญเฉพาะทาง เปิดให้บริการตั้งแต่ปี 2019 พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ เปิดทุกวัน 09.00–18.00 น.",
+  alternates: {
+    canonical: "/", // สำคัญ
+  },
 };
 
 export default function Home() {
@@ -21,8 +24,8 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "ซักเกิบแอนด์สปา (CM Shoe Clean)",
-            image: "https://cmshoeclean.com/og.jpg",
-            url: "https://cmshoeclean.com",
+            image: "https://www.cmshoeclean.com/og.jpg",
+            url: "https://www.cmshoeclean.com",
             telephone: "0953620244",
             address: {
               "@type": "PostalAddress",
