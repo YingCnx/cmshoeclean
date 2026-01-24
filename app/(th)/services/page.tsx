@@ -12,6 +12,36 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const mainServices = [
+    {
+      title: "Deep Cleaning",
+      price: "เริ่มต้น 2xx.-",
+      desc: "ทำความสะอาดล้ำลึกทุกซอกมุมด้วยน้ำยาออร์แกนิค ถนอมวัสดุรองเท้าคู่โปรด",
+      image: "/images/services/deep-cleaning.png"
+    },
+    {
+      title: "Luxury Leather Care",
+      price: "เริ่มต้น 3xx.-",
+      desc: "บริการสปารองเท้าหนังแบรนด์เนมโดยเฉพาะ พร้อมลงครีมบำรุงคืนความชุ่มชื้นให้หนัง",
+      icon: "✨",
+      image: "/images/services/luxury-cleaning.jpg"
+    },
+    {
+      title: "Waterproof Coating",
+      price: "เริ่มต้น 1xx.-",
+      desc: "เคลือบสเปรย์กันน้ำระดับพรีเมียม สร้างเกราะป้องกันความชื้นและคราบสกปรก ไม่ทิ้งคราบขาว",
+      icon: "☔",
+      image: "/images/services/waterproof.png"
+    },
+    {
+      title: "Un-yellowing",
+      price: "เริ่มต้น 1xx.-",
+      desc: "แก้ปัญหาพื้นรองเท้าเหลืองจากคราบออกซิเดชัน ให้กลับมาขาวสะอาดอีกครั้ง",
+      icon: "☀️",
+      image: "/images/services/unyellow.png"
+    }
+  ];
+
   return (
     <>
       {/* ================= FAQ Schema (SEO) ================= */}
@@ -29,8 +59,7 @@ export default function ServicesPage() {
                 name: "ซักรองเท้าเชียงใหม่ ใช้เวลากี่วัน?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text:
-                    "บริการซักรองเท้าและสปารองเท้าในเชียงใหม่ ใช้เวลาปกติประมาณ 3–5 วัน ขึ้นอยู่กับประเภทและสภาพรองเท้า และมีบริการเร่งด่วนภายใน 1 วัน",
+                  text: "บริการซักรองเท้าและสปารองเท้าในเชียงใหม่ ใช้เวลาปกติประมาณ 3–5 วัน ขึ้นอยู่กับประเภทและสภาพรองเท้า และมีบริการเร่งด่วนภายใน 1 วัน",
                 },
               },
               {
@@ -38,8 +67,7 @@ export default function ServicesPage() {
                 name: "ร้านซักรองเท้าเชียงใหม่ รับซักรองเท้าแบบไหนบ้าง?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text:
-                    "ร้านซักเกิบแอนด์สปา ให้บริการซักรองเท้าผ้าใบ สนีกเกอร์ รองเท้าหนัง หนังกลับ รองเท้าแบรนด์เนม รองเท้าบูท และรองเท้าประเภทอื่น ๆ โดยประเมินเป็นรายคู่",
+                  text: "ร้านซักเกิบแอนด์สปา ให้บริการซักรองเท้าผ้าใบ สนีกเกอร์ รองเท้าหนัง หนังกลับ รองเท้าแบรนด์เนม รองเท้าบูท และรองเท้าประเภทอื่น ๆ โดยประเมินเป็นรายคู่",
                 },
               },
               {
@@ -47,8 +75,7 @@ export default function ServicesPage() {
                 name: "สปารองเท้าเชียงใหม่ มีบริการอะไรบ้าง?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text:
-                    "บริการสปารองเท้าในเชียงใหม่ ได้แก่ ทำความสะอาดเชิงลึก แก้ขอบเหลือง แต้มขอบโฟม เคลือบสเปรย์กันน้ำ และเปลี่ยนเชือกรองเท้า",
+                  text: "บริการสปารองเท้าในเชียงใหม่ ได้แก่ ทำความสะอาดเชิงลึก แก้ขอบเหลือง แต้มขอบโฟม เคลือบสเปรย์กันน้ำ และเปลี่ยนเชือกรองเท้า",
                 },
               },
               {
@@ -56,17 +83,7 @@ export default function ServicesPage() {
                 name: "มีบริการรับ–ส่งรองเท้าในเชียงใหม่หรือไม่?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text:
-                    "ทางร้านมีบริการรับ–ส่งรองเท้าฟรีในเขตเมืองเชียงใหม่ และสามารถจัดส่งรองเท้าจากต่างจังหวัดได้",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "ร้านซักรองเท้าเชียงใหม่ เปิดกี่โมง?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text:
-                    "ร้านซักเกิบแอนด์สปา เปิดให้บริการทุกวัน เวลา 09.00 – 18.00 น.",
+                  text: "ทางร้านมีบริการรับ–ส่งรองเท้าฟรีในเขตเมืองเชียงใหม่ และสามารถจัดส่งรองเท้าจากต่างจังหวัดได้",
                 },
               },
             ],
@@ -74,188 +91,96 @@ export default function ServicesPage() {
         }}
       />
 
-      <section className="bg-background py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* ================= Header ================= */}
-          <header className="mb-16 text-center">
-            <h1 className="text-4xl font-bold text-brand-primary mb-4">
-              บริการซักรองเท้าและสปารองเท้าในเชียงใหม่
+      <div className="bg-white font-sans">
+        {/* ================= Page Header ================= */}
+        <section className="bg-white py-24 text-center relative overflow-hidden">
+          <div className="container mx-auto px-6 relative z-10">
+            <span className="text-[#27D7D0] font-black tracking-[0.4em] uppercase text-[10px] mb-4 block">
+              Our Specialist Services
+            </span>
+            <h1 className="text-5xl md:text-7xl font-black text-[#1e293b] mb-6 tracking-tighter">
+              Services & <span className="text-[#27D7D0]">Pricing</span>
             </h1>
-            <p className="text-slate-600 md:text-lg max-w-2xl mx-auto">
-              ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลรองเท้าอย่างพิถีพิถัน
-              ประเมินเป็นรายคู่ เพื่อเลือกวิธีที่เหมาะสมกับวัสดุและสภาพ
-              พร้อมบริการรับ–ส่งรองเท้าฟรีในเขตเมืองเชียงใหม่
-              <br />
-              <span className="text-sm block mt-2">
-                เปิดให้บริการทุกวัน เวลา 09.00 – 18.00 น.
-              </span>
+            <p className="text-slate-500 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
+              ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลรองเท้าอย่างพิถีพิถัน <br className="hidden md:block" />
+              ประเมินเป็นรายคู่เพื่อเลือกวิธีที่เหมาะสม พร้อมบริการรับ–ส่งฟรีในเขตเมือง
             </p>
-          </header>
-
-          {/* ================= Main Services ================= */}
-          <section className="mb-20">
-            <h2 className="text-2xl font-semibold text-brand-primary mb-8">
-              บริการซักรองเท้า
-            </h2>
-
-            <div className="mb-10 bg-brand-primary/90 px-6 py-4 text-center">
-              <p className="text-sm text-white font-medium">
-                ระยะเวลาดำเนินงานปกติ{" "}
-                <span className="font-semibold">3–5 วัน</span>
-                <span className="mx-2 text-white/60">•</span>
-                บริการด่วน{" "}
-                <span className="font-semibold text-amber-300">
-                  ภายใน 1 วัน
-                </span>
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <ServiceItem
-                image="/images/services/nike.jpg"
-                title="รองเท้าผ้าใบ / สนีกเกอร์"
-                desc="บริการซักรองเท้าผ้าใบและสนีกเกอร์ในเชียงใหม่ ทำความสะอาดอย่างอ่อนโยน"
-              />
-              <ServiceItem
-                image="/images/services/suede.jpg"
-                title="รองเท้าหนังกลับ"
-                desc="สปารองเท้าหนังกลับด้วยวิธีเฉพาะ ลดความเสี่ยงต่อสีและผิวสัมผัส"
-              />
-              <ServiceItem
-                image="/images/services/leather.jpg"
-                title="รองเท้าหนัง"
-                desc="บริการซักและฟื้นฟูรองเท้าหนัง ขจัดคราบอย่างเหมาะสม"
-              />
-              <ServiceItem
-                image="/images/services/boot.jpg"
-                title="รองเท้าบูท"
-                desc="ดูแลรองเท้าบูทและรองเท้าทรงสูง ด้วยขั้นตอนที่เหมาะกับโครงสร้าง"
-              />
-              <ServiceItem
-                image="/images/services/brand.jpg"
-                title="รองเท้าแบรนด์เนม"
-                desc="ซักรองเท้าแบรนด์เนมในเชียงใหม่ ประเมินเป็นพิเศษตามวัสดุและมูลค่า"
-              />
-              <ServiceItem
-                image="/images/services/other.jpg"
-                title="รองเท้าประเภทอื่น ๆ"
-                desc="สามารถสอบถามเพิ่มเติม ทางร้านยินดีประเมินและแนะนำวิธีดูแลที่เหมาะสม"
-              />
-            </div>
-          </section>
-
-          {/* ================= Extra Services ================= */}
-          <section className="mb-20">
-            <h2 className="text-2xl font-semibold text-brand-primary mb-8">
-              บริการสปารองเท้า (บริการเสริม)
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              <ServiceItemText
-                title="แก้ขอบเหลือง"
-                desc="บริการแก้ขอบเหลืองรองเท้า เพื่อให้รองเท้าดูสะอาดเหมือนใหม่"
-                highlight
-              />
-              <ServiceItemText
-                title="แต้มขอบโฟม"
-                desc="เก็บรายละเอียดขอบรองเท้า ให้ดูเรียบร้อยและสวยงาม"
-                highlight
-              />
-              <ServiceItemText
-                title="เคลือบสเปรย์กันน้ำ"
-                desc="ช่วยป้องกันความชื้นและสิ่งสกปรกในชีวิตประจำวัน"
-                highlight
-              />
-              <ServiceItemText
-                title="เปลี่ยนเชือกรองเท้า"
-                desc="เปลี่ยนเชือกรองเท้าใหม่ เพิ่มความสวยงาม"
-                highlight
-              />
-            </div>
-          </section>
-
-          {/* ================= Note ================= */}
-          <p className="text-center text-lg md:text-xl font-medium text-slate-700 mb-12">
-            ทุกบริการมีการประเมินสภาพรองเท้าก่อนดำเนินการ
-            เพื่อให้เหมาะสมกับวัสดุและลดความเสี่ยง
-          </p>
-
-          {/* ================= CTA ================= */}
-          <div className="text-center">
-            <a
-              href="https://line.me/R/ti/p/@708dfith"
-              target="_blank"
-              className="inline-block bg-brand-primary text-white px-10 py-4 rounded-full font-medium hover:bg-brand-dark transition"
-            >
-              ติดต่อ LINE เพื่อสอบถามบริการซักรองเท้า
-            </a>
           </div>
+        </section>
+
+        {/* ================= Service Grid ================= */}
+        <section className="py-24 bg-slate-50/50">
+          <div className="container mx-auto px-6 lg:px-20">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+              {mainServices.map((item, i) => (
+                <div key={i} className="group bg-white rounded-[3rem] overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
+                  <div className="h-80 relative overflow-hidden">
+                    <Image src={item.image} alt={`${item.title} เชียงใหม่`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <div className="absolute top-6 right-6 bg-[#27D7D0] text-white px-5 py-1.5 rounded-full text-[11px] font-black shadow-lg">
+                      {item.price}
+                    </div>
+                  </div>
+                  <div className="p-10 text-center">
+                    {/* <div className="w-16 h-16 bg-[#f0fdfc] text-4xl flex items-center justify-center rounded-[1.5rem] mx-auto mb-6 group-hover:bg-[#27D7D0] group-hover:text-white transition-all duration-300">
+                      {item.icon}
+                    </div> */}
+                    <h3 className="text-xl font-black text-[#1e293b] mb-4 tracking-tight">{item.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            
+          </div>
+        </section>
+
+        {/* ================= Order Process ================= */}
+        <section className="bg-[#1e293b] py-24 text-white rounded-[5rem] mx-6 mb-24 overflow-hidden relative shadow-2xl">
+          <div className="container mx-auto px-6 text-center relative z-10">
+            <span className="text-[#27D7D0] font-black tracking-[0.3em] uppercase text-[10px] mb-6 block">Working Process</span>
+            <h2 className="text-4xl md:text-6xl font-black mb-20 tracking-tighter">ง่ายๆ เพียง 3 ขั้นตอน</h2>
+            <div className="grid md:grid-cols-3 gap-16">
+              {[
+                { step: "01", title: "ส่งรูปประเมิน", desc: "ทัก Line ส่งรูปภาพรองเท้าเพื่อประเมินราคาและบริการที่เหมาะสม" },
+                { step: "02", title: "รับ-ส่งรองเท้า", desc: "เรามีบริการรับ-ส่งฟรีในเขตเมืองเชียงใหม่ หรือส่งพัสดุมาที่ร้าน" },
+                { step: "03", title: "รอรับความสะอาด", desc: "ทีมงานดูแลสปาอย่างพิถีพิถัน และแจ้งสถานะเมื่อเสร็จเรียบร้อย" }
+              ].map((step, i) => (
+                <div key={i} className="relative group text-center">
+                  <div className="text-8xl font-black text-white/[0.03] absolute -top-14 left-1/2 -translate-x-1/2 group-hover:text-[#27D7D0]/10 transition-colors">
+                    {step.step}
+                  </div>
+                  <div className="w-12 h-12 bg-[#27D7D0] rounded-full flex items-center justify-center text-white font-black mb-8 mx-auto relative z-10">
+                    {step.step}
+                  </div>
+                  <h4 className="text-2xl font-black mb-4 tracking-tight">{step.title}</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed font-medium px-4">{step.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ================= Final CTA ================= */}
+        <div className="text-center pb-24">
+          <a href="https://line.me/R/ti/p/@708dfith" 
+             target="_blank"
+             className="bg-[#27D7D0] text-white px-16 py-6 rounded-full font-black uppercase text-sm tracking-[0.2em] shadow-2xl shadow-cyan-100 hover:bg-[#1fbdb7] hover:scale-105 transition-all inline-block">
+            ติดต่อสอบถามบริการ
+          </a>
         </div>
-      </section>
+      </div>
     </>
   );
 }
 
-/* =======================
-   Components
-======================= */
-
-function ServiceItem({
-  image,
-  title,
-  desc,
-}: {
-  image: string;
-  title: string;
-  desc: string;
-}) {
+function ServiceItemText({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="bg-white border border-brand-soft hover:border-brand-primary transition overflow-hidden">
-      <div className="relative aspect-[4/3]">
-        <Image
-          src={image}
-          alt={`${title} เชียงใหม่`}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
-      <div className="border-t border-slate-200" />
-      <div className="p-6">
-        <h3 className="font-medium text-brand-primary mb-2">
-          {title}
-        </h3>
-        <p className="text-sm text-slate-600 leading-relaxed">
-          {desc}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function ServiceItemText({
-  title,
-  desc,
-  highlight = false,
-}: {
-  title: string;
-  desc: string;
-  highlight?: boolean;
-}) {
-  return (
-    <div
-      className={`border p-6 ${
-        highlight
-          ? "bg-slate-50 border-slate-200"
-          : "bg-white border-brand-soft"
-      }`}
-    >
-      <h3 className="font-medium text-brand-primary mb-2">
-        {title}
-      </h3>
-      <p className="text-slate-600 text-sm leading-relaxed">
-        {desc}
-      </p>
+    <div className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm hover:shadow-md transition-all text-center">
+      <h3 className="font-black text-[#1e293b] mb-2">{title}</h3>
+      <p className="text-slate-500 text-sm leading-relaxed">{desc}</p>
     </div>
   );
 }
