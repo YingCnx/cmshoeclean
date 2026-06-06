@@ -63,7 +63,7 @@ export default function ReviewsPage() {
             ],
           }),
         }}
-      </script>
+      />
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}

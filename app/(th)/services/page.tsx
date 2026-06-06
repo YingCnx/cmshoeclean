@@ -86,7 +86,7 @@ export default function ServicesPage() {
             ],
           }),
         }}
-      </script>
+      />
 
       <div className="bg-white font-sans">
         {/* ================= Page Header ================= */}

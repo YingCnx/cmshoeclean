@@ -52,7 +52,7 @@ export default function Home() {
             ],
           }),
         }}
-      </script>
+      />
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= HERO SECTION ================= */}

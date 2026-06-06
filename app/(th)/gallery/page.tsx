@@ -78,7 +78,7 @@ export default function GalleryPage() {
             "image": galleryItems.map(item => `https://www.cmshoeclean.com${item.after}`)
           }),
         }}
-      </script>
+      />
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}

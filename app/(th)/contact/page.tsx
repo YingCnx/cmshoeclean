@@ -36,7 +36,7 @@ export default function ContactPage() {
             ],
           }),
         }}
-      </script>
+      />
 
       <div className="bg-white font-sans">
         {/* ================= Header Section (Clean Brand Cyan) ================= */}
