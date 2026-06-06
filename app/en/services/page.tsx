@@ -18,25 +18,25 @@ export default function ServicesPage() {
   const mainServices = [
     {
       title: "Deep Cleaning",
-      price: "Start 2xx.-",
+      price: "Start 200.-",
       desc: "Deep cleaning for every detail using premium organic solutions. Safe for all materials.",
       image: "/images/services/deep-cleaning.png"
     },
     {
       title: "Luxury Leather Care",
-      price: "Start 3xx.-",
+      price: "Start 300.-",
       desc: "Specialized spa for luxury leather shoes. Includes deep cleaning and leather conditioning.",
       image: "/images/services/luxury-cleaning.jpg"
     },
     {
       title: "Waterproof Coating",
-      price: "Start 1xx.-",
+      price: "Start 100.-",
       desc: "Premium nano-coating technology to protect your shoes from liquid and stains.",
       image: "/images/services/waterproof.png"
     },
     {
       title: "Un-yellowing",
-      price: "Start 1xx.-",
+      price: "Start 100.-",
       desc: "Restore yellowed outsoles caused by oxidation back to their original clean white look.",
       image: "/images/services/unyellow.png"
     }
@@ -152,7 +152,7 @@ export default function ServicesPage() {
 
         {/* ================= Final CTA ================= */}
         <div className="text-center pb-24 px-6">
-          <a href="https://line.me/R/ti/p/@708dfith" 
+          <a href="https://line.me/R/ti/p/@020gojbb" 
              target="_blank"
              rel="noopener noreferrer"
              className="w-full sm:w-auto bg-[#27D7D0] text-white px-12 md:px-16 py-5 md:py-6 rounded-full font-black uppercase text-xs md:text-sm tracking-[0.2em] shadow-2xl shadow-cyan-100 hover:bg-[#1fbdb7] hover:scale-105 active:scale-95 transition-all inline-block">

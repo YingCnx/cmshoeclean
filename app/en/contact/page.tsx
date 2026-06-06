@@ -38,7 +38,7 @@ export default function ContactPage() {
             "openingHours": "Mo-Su 09:00-18:00",
             "sameAs": [
               "https://www.facebook.com/suckgerbcnx",
-              "https://line.me/R/ti/p/@708dfith",
+              "https://line.me/R/ti/p/@020gojbb",
             ],
           }),
         }}
@@ -76,8 +76,8 @@ export default function ContactPage() {
                   <div className="grid gap-6">
                     {/* Call Card */}
                     <a href="tel:0953620244" className="flex items-center p-6 md:p-8 bg-white rounded-[2rem] md:rounded-[2.5rem] border border-slate-50 shadow-sm hover:shadow-xl transition-all group">
-                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center text-2xl md:text-3xl mr-6 group-hover:bg-[#27D7D0] group-hover:text-white transition-all">
-                        📞
+                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center mr-6 group-hover:bg-[#27D7D0] transition-all text-[#27D7D0] group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.338A1.5 1.5 0 013.75 4.5h2.25a1.5 1.5 0 011.44 1.08l.6 2.4a1.5 1.5 0 01-.36 1.44l-1.05 1.05a11.25 11.25 0 005.4 5.4l1.05-1.05a1.5 1.5 0 011.44-.36l2.4.6a1.5 1.5 0 011.08 1.44v2.25a1.5 1.5 0 01-1.838 1.5C6.09 19.5 2.25 13.41 2.25 6.338z" /></svg>
                       </div>
                       <div>
                         <p className="text-[10px] font-black text-[#27D7D0] uppercase tracking-widest mb-1">Phone</p>
@@ -86,20 +86,20 @@ export default function ContactPage() {
                     </a>
 
                     {/* Line Card */}
-                    <a href="https://line.me/R/ti/p/@708dfith" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 md:p-8 bg-white rounded-[2rem] md:rounded-[2.5rem] border border-slate-50 shadow-sm hover:shadow-xl transition-all group">
-                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center text-2xl md:text-3xl mr-6 group-hover:bg-[#27D7D0] group-hover:text-white transition-all">
-                        💬
+                    <a href="https://line.me/R/ti/p/@020gojbb" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 md:p-8 bg-white rounded-[2rem] md:rounded-[2.5rem] border border-slate-50 shadow-sm hover:shadow-xl transition-all group">
+                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center mr-6 group-hover:bg-[#27D7D0] transition-all text-[#27D7D0] group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
                       </div>
                       <div>
                         <p className="text-[10px] font-black text-[#27D7D0] uppercase tracking-widest mb-1">Line Official</p>
-                        <p className="text-lg md:text-xl font-black text-[#1e293b]">@708dfith</p>
+                        <p className="text-lg md:text-xl font-black text-[#1e293b]">@020gojbb</p>
                       </div>
                     </a>
 
                     {/* Facebook Card */}
                     <a href="https://www.facebook.com/suckgerbcnx" target="_blank" rel="noopener noreferrer" className="flex items-center p-6 md:p-8 bg-white rounded-[2rem] md:rounded-[2.5rem] border border-slate-50 shadow-sm hover:shadow-xl transition-all group">
-                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center text-2xl md:text-3xl mr-6 group-hover:bg-[#27D7D0] group-hover:text-white transition-all">
-                        📘
+                      <div className="w-14 h-14 md:w-16 md:h-16 bg-[#f0fdfc] rounded-2xl flex items-center justify-center mr-6 group-hover:bg-[#27D7D0] transition-all text-[#27D7D0] group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                       </div>
                       <div>
                         <p className="text-[10px] font-black text-[#27D7D0] uppercase tracking-widest mb-1">Facebook</p>
@@ -161,12 +161,12 @@ export default function ContactPage() {
                 Send us photos via LINE for a free instant estimate.
               </p>
               <a
-                href="https://line.me/R/ti/p/@708dfith"
+                href="https://line.me/R/ti/p/@020gojbb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#27D7D0] text-white px-10 md:px-14 py-5 md:py-6 rounded-full font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-cyan-950/20 uppercase tracking-widest text-sm"
               >
-                Line Official: @708dfith
+                Line Official: @020gojbb
               </a>
             </div>
           </div>

@@ -120,7 +120,7 @@ export default function GalleryPage() {
                   Get a free estimate via LINE. Free pick-up & delivery in Chiang Mai city.
                 </p>
                 <a
-                  href="https://line.me/R/ti/p/@708dfith"
+                  href="https://line.me/R/ti/p/@020gojbb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#27D7D0] text-white px-12 py-5 rounded-full font-black text-lg md:text-xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-cyan-900/20 uppercase"

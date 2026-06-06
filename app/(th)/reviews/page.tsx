@@ -101,7 +101,7 @@ export default function ReviewsPage() {
               />
               <ReviewCard
                 name="Jittanat Makanut"
-                text="ซักรองเท้าสะอาดมาก คราบออกจริง งานละเอียด เหมือนได้คู่ใหม่เลย ราคาโอเค แนะนำร้านซักรองเท้าเชียงใหม่ร้านนี้ครับ 👍"
+                text="ซักรองเท้าสะอาดมาก คราบออกจริง งานละเอียด เหมือนได้คู่ใหม่เลย ราคาโอเค แนะนำร้านซักรองเท้าเชียงใหม่ร้านนี้ครับ"
               />
               <ReviewCard
                 name="Walairat Mint"
@@ -142,7 +142,7 @@ export default function ReviewsPage() {
                   พร้อมใช้บริการกับร้านซักรองเท้า <br /> ที่ลูกค้าเชียงใหม่ไว้ใจ
                 </h2>
                 <a
-                  href="https://line.me/R/ti/p/@708dfith"
+                  href="https://line.me/R/ti/p/@020gojbb"
                   target="_blank"
                   className="inline-block bg-[#1e293b] text-white px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl"
                 >

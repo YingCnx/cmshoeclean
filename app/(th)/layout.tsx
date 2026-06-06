@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeaderTH from "../../components/HeaderTH"; // ไฟล์ที่คุณแยก client component ออกไป
+import FloatingLine from "../../components/FloatingLine";
 import Link from "next/link";
 
 /* =======================
@@ -64,6 +65,7 @@ export default function ThaiLayout({
       <HeaderTH />
 
       <main className="flex-grow">{children}</main>
+      <FloatingLine />
 
       {/* ================= Footer ================= */}
       <footer className="bg-[#1e293b] text-white pt-20 pb-10">

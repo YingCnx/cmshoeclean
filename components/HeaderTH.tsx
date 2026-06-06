@@ -38,7 +38,7 @@ export default function HeaderTH() {
               <Link href="/en" className="text-slate-400 hover:text-[#1e293b]">EN</Link>
             </div>
             <a 
-              href="https://line.me/R/ti/p/@708dfith" 
+              href="https://line.me/R/ti/p/@020gojbb" 
               className="bg-[#27D7D0] text-white px-8 py-3 rounded-full font-black text-[11px] tracking-widest hover:bg-[#1fbdb7] shadow-lg shadow-cyan-100 transition-all uppercase"
             >
               Get Service
@@ -47,8 +47,12 @@ export default function HeaderTH() {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden text-2xl text-[#1e293b]" onClick={() => setOpen(!open)}>
-          {open ? "✕" : "☰"}
+        <button className="md:hidden text-[#1e293b] p-1" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+          {open ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          )}
         </button>
       </div>
 
@@ -65,7 +69,7 @@ export default function HeaderTH() {
                 <span className="text-[#27D7D0]">TH</span>
                 <Link href="/en" className="text-slate-400">EN</Link>
              </div>
-             <a href="https://line.me/R/ti/p/@708dfith" className="text-[#27D7D0]">LINE US</a>
+             <a href="https://line.me/R/ti/p/@020gojbb" className="text-[#27D7D0]">LINE US</a>
           </div>
         </div>
       )}

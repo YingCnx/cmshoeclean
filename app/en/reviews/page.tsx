@@ -95,7 +95,7 @@ export default function ReviewsPage() {
               />
               <ReviewCard
                 name="Jittanat Makanut"
-                text="My shoes look brand new! Very detailed work and reasonable pricing. Definitely the best shoe cleaning shop in Chiang Mai. 👍"
+                text="My shoes look brand new! Very detailed work and reasonable pricing. Definitely the best shoe cleaning shop in Chiang Mai."
               />
               <ReviewCard
                 name="Walairat Mint"
@@ -135,7 +135,7 @@ export default function ReviewsPage() {
                   Join our <span className="text-[#27D7D0]">Satisfied</span> Customers
                 </h2>
                 <a
-                  href="https://line.me/R/ti/p/@708dfith"
+                  href="https://line.me/R/ti/p/@020gojbb"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-[#27D7D0] text-white px-12 py-5 rounded-full font-black text-xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-cyan-900/20 uppercase"

@@ -36,14 +36,18 @@ export default function HeaderEN() {
               <span className="text-slate-300">/</span>
               <span className="text-[#27D7D0]">EN</span>
             </div>
-            <a href="https://line.me/R/ti/p/@708dfith" target="_blank" className="bg-[#1e293b] text-white px-8 py-3 rounded-full font-black text-[11px] tracking-widest hover:bg-[#27D7D0] transition-all uppercase shadow-lg shadow-slate-200">
+            <a href="https://line.me/R/ti/p/@020gojbb" target="_blank" className="bg-[#1e293b] text-white px-8 py-3 rounded-full font-black text-[11px] tracking-widest hover:bg-[#27D7D0] transition-all uppercase shadow-lg shadow-slate-200">
               Book Now
             </a>
           </div>
         </div>
 
-        <button className="md:hidden text-2xl" onClick={() => setOpen(!open)}>
-          {open ? "✕" : "☰"}
+        <button className="md:hidden p-1" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+          {open ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          )}
         </button>
       </div>
 
@@ -59,7 +63,7 @@ export default function HeaderEN() {
                 <Link href="/" className="text-slate-400">TH</Link>
                 <span className="text-[#27D7D0]">EN</span>
              </div>
-             <a href="https://line.me/R/ti/p/@708dfith" className="text-[#27D7D0]">LINE US</a>
+             <a href="https://line.me/R/ti/p/@020gojbb" className="text-[#27D7D0]">LINE US</a>
           </div>
         </div>
       )}

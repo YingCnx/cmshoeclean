@@ -121,7 +121,7 @@ export default function GalleryPage() {
                   ประเมินสภาพผ่าน LINE ฟรี บริการรับ-ส่งฟรีในเขตเมืองเชียงใหม่
                 </p>
                 <a
-                  href="https://line.me/R/ti/p/@708dfith"
+                  href="https://line.me/R/ti/p/@020gojbb"
                   target="_blank"
                   className="inline-block bg-[#27D7D0] text-white px-12 py-5 rounded-full font-black text-xl hover:scale-105 transition-all shadow-xl shadow-cyan-900/20"
                 >

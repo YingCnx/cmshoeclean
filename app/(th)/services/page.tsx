@@ -15,29 +15,29 @@ export default function ServicesPage() {
   const mainServices = [
     {
       title: "Deep Cleaning",
-      price: "เริ่มต้น 2xx.-",
+      price: "เริ่มต้น 200.-",
       desc: "ทำความสะอาดล้ำลึกทุกซอกมุมด้วยน้ำยาออร์แกนิค ถนอมวัสดุรองเท้าคู่โปรด",
       image: "/images/services/deep-cleaning.png"
     },
     {
       title: "Luxury Leather Care",
-      price: "เริ่มต้น 3xx.-",
+      price: "เริ่มต้น 300.-",
       desc: "บริการสปารองเท้าหนังแบรนด์เนมโดยเฉพาะ พร้อมลงครีมบำรุงคืนความชุ่มชื้นให้หนัง",
-      icon: "✨",
+      icon: "luxury",
       image: "/images/services/luxury-cleaning.jpg"
     },
     {
       title: "Waterproof Coating",
-      price: "เริ่มต้น 1xx.-",
+      price: "เริ่มต้น 100.-",
       desc: "เคลือบสเปรย์กันน้ำระดับพรีเมียม สร้างเกราะป้องกันความชื้นและคราบสกปรก ไม่ทิ้งคราบขาว",
-      icon: "☔",
+      icon: "waterproof",
       image: "/images/services/waterproof.png"
     },
     {
       title: "Un-yellowing",
-      price: "เริ่มต้น 1xx.-",
+      price: "เริ่มต้น 100.-",
       desc: "แก้ปัญหาพื้นรองเท้าเหลืองจากคราบออกซิเดชัน ให้กลับมาขาวสะอาดอีกครั้ง",
-      icon: "☀️",
+      icon: "unyellow",
       image: "/images/services/unyellow.png"
     }
   ];
@@ -165,7 +165,7 @@ export default function ServicesPage() {
 
         {/* ================= Final CTA ================= */}
         <div className="text-center pb-24">
-          <a href="https://line.me/R/ti/p/@708dfith" 
+          <a href="https://line.me/R/ti/p/@020gojbb" 
              target="_blank"
              className="bg-[#27D7D0] text-white px-16 py-6 rounded-full font-black uppercase text-sm tracking-[0.2em] shadow-2xl shadow-cyan-100 hover:bg-[#1fbdb7] hover:scale-105 transition-all inline-block">
             ติดต่อสอบถามบริการ

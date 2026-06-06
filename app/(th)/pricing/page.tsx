@@ -54,7 +54,7 @@ export default function PricingPage() {
           </p>
 
           <a
-            href="https://line.me/R/ti/p/@708dfith"
+            href="https://line.me/R/ti/p/@020gojbb"
             target="_blank"
             className="inline-block bg-brand-primary text-white px-10 py-4 rounded-full font-medium hover:bg-brand-dark transition"
           >

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeaderEN from "../../components/HeaderEN"; // Ensure you have an English header component
+import FloatingLine from "../../components/FloatingLine";
 import Link from "next/link";
 
 /* =======================
@@ -65,6 +66,7 @@ export default function EnglishLayout({
       <HeaderEN />
 
       <main className="flex-grow">{children}</main>
+      <FloatingLine />
 
       {/* ================= Footer (Premium Dark Style) ================= */}
       <footer className="bg-[#1e293b] text-white pt-20 pb-10 mt-auto">
