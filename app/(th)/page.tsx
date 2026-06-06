@@ -2,9 +2,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ซักรองเท้า เชียงใหม่ | สปารองเท้าพรีเมียม | ซักเกิบแอนด์สปา",
+  title: "ซักเกิบ เชียงใหม่ | ซักรองเท้า สปารองเท้าพรีเมียม | ซักเกิบแอนด์สปา",
   description:
-    "ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลโดยผู้เชี่ยวชาญเฉพาะทาง เปิดให้บริการตั้งแต่ปี 2019 พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ เปิดทุกวัน 09.00–18.00 น.",
+    "ซักเกิบ เชียงใหม่ — ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลโดยผู้เชี่ยวชาญเฉพาะทาง เปิดให้บริการตั้งแต่ปี 2019 พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ เปิดทุกวัน 09.00–18.00 น.",
   alternates: {
     canonical: "/",
   },
@@ -21,6 +21,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "ซักเกิบแอนด์สปา (CM Shoe Clean)",
+            alternateName: ["ซักเกิบ", "ซักเกิบเชียงใหม่", "SuckGerb & Spa"],
             image: "https://www.cmshoeclean.com/og.jpg",
             url: "https://www.cmshoeclean.com",
             telephone: "0953620244",
