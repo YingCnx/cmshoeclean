@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 /* =======================
@@ -45,10 +44,8 @@ export default function ServicesPage() {
   return (
     <>
       {/* ================= FAQ Schema (EN SEO) ================= */}
-      <Script
-        id="faq-schema-en-services"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -81,7 +78,7 @@ export default function ServicesPage() {
             ],
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans">
         {/* ================= Page Header ================= */}

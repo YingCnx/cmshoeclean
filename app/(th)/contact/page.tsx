@@ -1,13 +1,17 @@
-import Script from "next/script";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "ติดต่อเรา | ซักรองเท้า เชียงใหม่ | ซักเกิบแอนด์สปา",
+  description: "ติดต่อร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ โทร 095-362-0244 LINE @020gojbb เปิดทุกวัน 09.00–18.00 น. มีบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่",
+  alternates: { canonical: "/contact" },
+};
 
 export default function ContactPage() {
   return (
     <>
       {/* ================= LocalBusiness Schema (SEO) ================= */}
-<Script
-        id="local-business-contact-schema"
+<script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -32,7 +36,7 @@ export default function ContactPage() {
             ],
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans">
         {/* ================= Header Section (Clean Brand Cyan) ================= */}

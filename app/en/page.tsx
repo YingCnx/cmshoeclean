@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 /* =======================
@@ -26,10 +25,8 @@ export default function Home() {
   return (
     <>
       {/* ================= SEO: LocalBusiness Schema ================= */}
-      <Script
-        id="local-business-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -55,7 +52,7 @@ export default function Home() {
             ],
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= HERO SECTION ================= */}

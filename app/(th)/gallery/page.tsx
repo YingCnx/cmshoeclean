@@ -1,10 +1,9 @@
 import GalleryImage from "@/components/GalleryImage";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata =================
 export const metadata: Metadata = {
-  title: "รีวิวผลงานซักรองเท้า เชียงใหม่ | ก่อนและหลังสปารองเท้า | ซักเกิบแอนด์สปา",
+  title: "ผลงานซักรองเท้า เชียงใหม่ | Before & After สปารองเท้า | ซักเกิบแอนด์สปา",
   description:
     "ชมตัวอย่างผลงานจริง Before & After บริการซักรองเท้าผ้าใบ รองเท้าหนัง และรองเท้าแบรนด์เนมในเชียงใหม่ มั่นใจในคุณภาพความสะอาดและมาตรฐานสปาระดับพรีเมียม",
   alternates: {
@@ -68,8 +67,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* ================= SEO: ImageGallery Schema ================= */}
-      <Script
-        id="gallery-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -80,7 +78,7 @@ export default function GalleryPage() {
             "image": galleryItems.map(item => `https://www.cmshoeclean.com${item.after}`)
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}

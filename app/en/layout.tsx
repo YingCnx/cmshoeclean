@@ -62,6 +62,8 @@ export default function EnglishLayout({
 }) {
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans overflow-hidden">
+      {/* Set lang="en" for EN pages — root layout defaults to "th" */}
+      <script dangerouslySetInnerHTML={{ __html: `document.documentElement.lang='en'` }} />
       {/* English Header Component */}
       <HeaderEN />
 

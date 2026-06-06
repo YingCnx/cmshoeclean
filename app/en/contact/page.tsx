@@ -1,4 +1,3 @@
-import Script from "next/script";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata (English Version) =================
@@ -14,10 +13,8 @@ export default function ContactPage() {
   return (
     <>
       {/* ================= LocalBusiness Schema (EN SEO) ================= */}
-      <Script
-        id="local-business-contact-schema-en"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -42,7 +39,7 @@ export default function ContactPage() {
             ],
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}

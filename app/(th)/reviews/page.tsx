@@ -1,4 +1,3 @@
-import Script from "next/script";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata (จากของเดิมที่คุณให้มา) =================
@@ -23,10 +22,8 @@ export default function ReviewsPage() {
   return (
     <>
       {/* ================= Review + LocalBusiness Schema (SEO ชุดเดิม) ================= */}
-      <Script
-        id="review-schema-th"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -66,7 +63,7 @@ export default function ReviewsPage() {
             ],
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}

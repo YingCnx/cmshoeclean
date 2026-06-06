@@ -1,11 +1,10 @@
 import Image from "next/image";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ซักรองเท้า เชียงใหม่ | สปารองเท้า เชียงใหม่ | ซักเกิบแอนด์สปา",
+  title: "ซักรองเท้า เชียงใหม่ | สปารองเท้าพรีเมียม | ซักเกิบแอนด์สปา",
   description:
-    "ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูดูแลโดยผู้เชี่ยวชาญเฉพาะทาง เปิดให้บริการตั้งแต่ปี 2019 พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ เปิดทุกวัน 09.00–18.00 น.",
+    "ร้านซักรองเท้าและสปารองเท้าในเชียงใหม่ ดูแลโดยผู้เชี่ยวชาญเฉพาะทาง เปิดให้บริการตั้งแต่ปี 2019 พร้อมบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ เปิดทุกวัน 09.00–18.00 น.",
   alternates: {
     canonical: "/",
   },
@@ -15,10 +14,8 @@ export default function Home() {
   return (
     <>
       {/* ================= SEO: LocalBusiness Schema ================= */}
-      <Script
-        id="local-business-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -27,6 +24,7 @@ export default function Home() {
             image: "https://www.cmshoeclean.com/og.jpg",
             url: "https://www.cmshoeclean.com",
             telephone: "0953620244",
+            priceRange: "฿฿",
             address: {
               "@type": "PostalAddress",
               addressLocality: "เชียงใหม่",
@@ -38,7 +36,7 @@ export default function Home() {
             },
             openingHours: "Mo-Su 09:00-18:00",
             sameAs: [
-              "https://www.facebook.com/ซักเกิบแอนด์สปา",
+              "https://www.facebook.com/suckgerbcnx",
               "https://line.me/R/ti/p/@020gojbb",
             ],
           }),

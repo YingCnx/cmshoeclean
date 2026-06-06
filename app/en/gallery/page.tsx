@@ -1,5 +1,4 @@
 import GalleryImage from "@/components/GalleryImage";
-import Script from "next/script";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata (English Version) =================
@@ -68,8 +67,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* ================= SEO: ImageGallery Schema ================= */}
-      <Script
-        id="gallery-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -80,7 +78,7 @@ export default function GalleryPage() {
             "image": galleryItems.map(item => `https://www.cmshoeclean.com${item.after}`)
           }),
         }}
-      />
+      </script>
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= Page Header ================= */}
