@@ -43,6 +43,23 @@ export default function Home() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              { "@type": "Question", name: "ซักรองเท้าใช้เวลากี่วัน?", acceptedAnswer: { "@type": "Answer", text: "โดยทั่วไปใช้เวลาประมาณ 3–5 วันทำการ มีบริการด่วนภายใน 1 วัน (มีค่าใช้จ่ายเพิ่มเติม)" } },
+              { "@type": "Question", name: "ราคาซักรองเท้าเท่าไหร่?", acceptedAnswer: { "@type": "Answer", text: "เริ่มต้นที่ 200 บาทขึ้นไป ส่งรูปผ่าน LINE เพื่อประเมินราคาฟรีได้ทันที" } },
+              { "@type": "Question", name: "รับซักรองเท้าแบบไหนบ้าง?", acceptedAnswer: { "@type": "Answer", text: "รับซักรองเท้าทุกประเภท ผ้าใบ สนีกเกอร์ หนัง หนังกลับ แบรนด์เนม รองเท้าบูท โดยประเมินวิธีดูแลเป็นรายคู่" } },
+              { "@type": "Question", name: "มีบริการรับ–ส่งรองเท้าไหม?", acceptedAnswer: { "@type": "Answer", text: "มีบริการรับ–ส่งฟรีในเขตเมืองเชียงใหม่ ลูกค้าต่างจังหวัดส่งพัสดุมาได้ทุกวัน" } },
+              { "@type": "Question", name: "ลูกค้าต่างจังหวัดส่งมาได้ไหม?", acceptedAnswer: { "@type": "Answer", text: "ได้เลยครับ ลูกค้าทั่วประเทศส่งพัสดุมาที่ร้านได้ ติดต่อ LINE ก่อนส่งเพื่อรับที่อยู่จัดส่ง" } },
+              { "@type": "Question", name: "รองเท้าหนังแบรนด์เนมซักได้ไหม?", acceptedAnswer: { "@type": "Answer", text: "ได้ครับ มีบริการ Luxury Leather Care โดยเฉพาะ ใช้น้ำยาที่เหมาะกับวัสดุแต่ละชนิด ไม่ทำลายหนังหรือสี" } },
+            ],
+          }),
+        }}
+      />
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= HERO SECTION ================= */}
@@ -142,6 +159,56 @@ export default function Home() {
                   <h3 className="text-xl font-black text-[#1e293b] mb-4 leading-tight">{item.title}</h3>
                   <p className="text-slate-500 text-sm leading-relaxed font-medium">{item.desc}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ================= FAQ SECTION ================= */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6 max-w-3xl">
+            <div className="text-center mb-12">
+              <span className="text-[#27D7D0] font-black tracking-[0.3em] uppercase text-[10px] mb-3 block">FAQ</span>
+              <h2 className="text-3xl md:text-5xl font-black text-[#1e293b] tracking-tighter">คำถามที่พบบ่อย</h2>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "ซักรองเท้าใช้เวลากี่วัน?",
+                  a: "โดยทั่วไปใช้เวลาประมาณ 3–5 วันทำการ ขึ้นอยู่กับประเภทและสภาพรองเท้า หากต้องการเร่งด่วนสามารถแจ้งได้ มีบริการด่วนภายใน 1 วัน (มีค่าใช้จ่ายเพิ่มเติม)",
+                },
+                {
+                  q: "ราคาซักรองเท้าเท่าไหร่?",
+                  a: "เริ่มต้นที่ 200 บาทขึ้นไป ขึ้นอยู่กับประเภทรองเท้าและสภาพคราบ สามารถส่งรูปผ่าน LINE เพื่อประเมินราคาฟรีได้ทันที ไม่มีค่าใช้จ่ายในการประเมิน",
+                },
+                {
+                  q: "รับซักรองเท้าแบบไหนบ้าง?",
+                  a: "รับซักรองเท้าทุกประเภท ไม่ว่าจะเป็นรองเท้าผ้าใบ สนีกเกอร์ รองเท้าหนัง หนังกลับ รองเท้าแบรนด์เนม รองเท้าบูท และรองเท้าแฟชั่นทุกชนิด โดยประเมินวิธีดูแลเป็นรายคู่",
+                },
+                {
+                  q: "มีบริการรับ–ส่งรองเท้าไหม?",
+                  a: "มีบริการรับ–ส่งรองเท้าฟรีในเขตพื้นที่เมืองเชียงใหม่ สำหรับลูกค้าต่างจังหวัดสามารถส่งพัสดุมาได้ทุกวัน และเราจะส่งกลับให้หลังซักเสร็จ",
+                },
+                {
+                  q: "ลูกค้าต่างจังหวัดส่งมาได้ไหม?",
+                  a: "ได้เลยครับ ลูกค้าทั่วประเทศสามารถส่งพัสดุมาที่ร้านได้ ติดต่อผ่าน LINE ก่อนส่งเพื่อประเมินราคาและรับที่อยู่จัดส่ง",
+                },
+                {
+                  q: "รองเท้าหนังแบรนด์เนมซักได้ไหม?",
+                  a: "ได้ครับ เรามีบริการ Luxury Leather Care โดยเฉพาะสำหรับรองเท้าหนังแบรนด์เนม ใช้น้ำยาและวิธีดูแลที่เหมาะสมกับวัสดุแต่ละชนิด ไม่ทำลายหนังหรือสีรองเท้า",
+                },
+              ].map((item, i) => (
+                <details key={i} className="group border border-slate-100 rounded-[1.5rem] bg-white shadow-sm overflow-hidden">
+                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-black text-[#1e293b] text-base md:text-lg hover:text-[#27D7D0] transition-colors">
+                    <span>{item.q}</span>
+                    <svg className="w-5 h-5 text-[#27D7D0] shrink-0 ml-4 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-500 leading-relaxed font-medium text-sm md:text-base border-t border-slate-50 pt-4">
+                    {item.a}
+                  </div>
+                </details>
               ))}
             </div>
           </div>

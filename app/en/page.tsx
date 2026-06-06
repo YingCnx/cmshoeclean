@@ -53,6 +53,23 @@ export default function Home() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              { "@type": "Question", name: "How long does shoe cleaning take?", acceptedAnswer: { "@type": "Answer", text: "Standard service takes 3–5 business days depending on shoe type and condition. Express service (1-day) is available at an additional cost." } },
+              { "@type": "Question", name: "How much does shoe cleaning cost?", acceptedAnswer: { "@type": "Answer", text: "Prices start from 200 THB. Send photos via LINE for a free instant estimate — no commitment required." } },
+              { "@type": "Question", name: "What types of shoes do you clean?", acceptedAnswer: { "@type": "Answer", text: "We clean all types: sneakers, leather shoes, suede, luxury brands, boots, and more. Each pair is assessed individually for the best treatment." } },
+              { "@type": "Question", name: "Do you offer pick-up and delivery?", acceptedAnswer: { "@type": "Answer", text: "Yes! Free pick-up and delivery within Chiang Mai city. Customers outside Chiang Mai can ship their shoes to us via courier." } },
+              { "@type": "Question", name: "Can I send shoes from outside Chiang Mai?", acceptedAnswer: { "@type": "Answer", text: "Absolutely. We accept shoes sent by parcel from anywhere in Thailand. Contact us on LINE first to get the shipping address and a price estimate." } },
+              { "@type": "Question", name: "Can you clean luxury leather shoes?", acceptedAnswer: { "@type": "Answer", text: "Yes, we offer specialized Luxury Leather Care using solutions matched to each material type, ensuring safe and thorough cleaning without damage." } },
+            ],
+          }),
+        }}
+      />
 
       <div className="bg-white font-sans overflow-hidden">
         {/* ================= HERO SECTION ================= */}
@@ -154,6 +171,56 @@ export default function Home() {
                   <h3 className="text-lg md:text-xl font-black text-[#1e293b] mb-4 leading-tight">{item.title}</h3>
                   <p className="text-slate-500 text-sm leading-relaxed font-medium">{item.desc}</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ================= FAQ SECTION ================= */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6 max-w-3xl">
+            <div className="text-center mb-12">
+              <span className="text-[#27D7D0] font-black tracking-[0.3em] uppercase text-[10px] mb-3 block">FAQ</span>
+              <h2 className="text-3xl md:text-5xl font-black text-[#1e293b] tracking-tighter uppercase">Common Questions</h2>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "How long does shoe cleaning take?",
+                  a: "Standard service takes 3–5 business days depending on the shoe type and condition. Express 1-day service is available upon request at an additional cost.",
+                },
+                {
+                  q: "How much does shoe cleaning cost?",
+                  a: "Prices start from 200 THB. Simply send photos via LINE for a free instant estimate — no commitment required.",
+                },
+                {
+                  q: "What types of shoes do you clean?",
+                  a: "We clean all types: sneakers, leather shoes, suede, luxury brands, boots, and more. Each pair receives an individual assessment to choose the safest treatment method.",
+                },
+                {
+                  q: "Do you offer pick-up and delivery?",
+                  a: "Yes! We offer free pick-up and delivery within Chiang Mai city. Customers outside the city can ship their shoes to us via courier and we'll send them back after cleaning.",
+                },
+                {
+                  q: "Can I send shoes from outside Chiang Mai?",
+                  a: "Absolutely. We accept parcel deliveries from anywhere in Thailand. Contact us on LINE first to get the shipping address and a price estimate.",
+                },
+                {
+                  q: "Can you clean luxury leather shoes?",
+                  a: "Yes. We offer specialized Luxury Leather Care using premium, material-matched solutions that clean deeply without damaging the leather, color, or structure of your shoes.",
+                },
+              ].map((item, i) => (
+                <details key={i} className="group border border-slate-100 rounded-[1.5rem] bg-white shadow-sm overflow-hidden">
+                  <summary className="flex items-center justify-between p-6 cursor-pointer list-none font-black text-[#1e293b] text-base md:text-lg hover:text-[#27D7D0] transition-colors">
+                    <span>{item.q}</span>
+                    <svg className="w-5 h-5 text-[#27D7D0] shrink-0 ml-4 transition-transform group-open:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-6 text-slate-500 leading-relaxed font-medium text-sm md:text-base border-t border-slate-50 pt-4">
+                    {item.a}
+                  </div>
+                </details>
               ))}
             </div>
           </div>
