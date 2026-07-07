@@ -1,4 +1,5 @@
 import GalleryImage from "@/components/GalleryImage";
+import FacebookFeedSection from "@/components/FacebookFeedSectionEn";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata (English Version) =================
@@ -101,6 +102,10 @@ export default function GalleryPage() {
         {/* ================= Gallery List ================= */}
         <section className="pb-32">
           <div className="max-w-6xl mx-auto px-6">
+            {/* ================= Facebook Feed (ใหม่) ================= */}
+                        <div className="mb-40">
+                          <FacebookFeedSection />
+                        </div>
             <div className="space-y-24 md:space-y-40">
               {galleryItems.map((item, index) => (
                 <GalleryItem key={index} {...item} />

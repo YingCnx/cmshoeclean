@@ -1,4 +1,5 @@
 import GalleryImage from "@/components/GalleryImage";
+import FacebookFeedSection from "@/components/FacebookFeedSection";
 import type { Metadata } from "next";
 
 // ================= SEO: Metadata =================
@@ -11,7 +12,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function GalleryPage() {
+// หมายเหตุ: เปลี่ยนจาก function ธรรมดา เป็น async function
+// เพราะต้องรอดึงข้อมูลฟีด Facebook จาก server ก่อน render
+export default async function GalleryPage() {
   const galleryItems = [
     {
       title: "Sneakers Cleaning",
@@ -99,14 +102,24 @@ export default function GalleryPage() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(#27D7D0_1px,transparent_1px)] [background-size:40px_40px] opacity-[0.03]"></div>
         </section>
 
+          
+
         {/* ================= Gallery List ================= */}
-        <section className="pb-32">
+        <section className="pb-32">          
+
           <div className="max-w-6xl mx-auto px-6">
+
+            {/* ================= Facebook Feed (ใหม่) ================= */}
+            <div className="mb-40">
+              <FacebookFeedSection />
+            </div>
             <div className="space-y-40">
               {galleryItems.map((item, index) => (
                 <GalleryItem key={index} {...item} />
               ))}
             </div>
+
+            
 
             {/* ================= Bottom CTA ================= */}
             <div className="mt-40 bg-[#1e293b] rounded-[4rem] p-12 lg:p-20 text-center text-white shadow-2xl relative overflow-hidden">
