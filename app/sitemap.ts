@@ -1,8 +1,27 @@
 import { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.cmshoeclean.com";
   const lastModified = new Date();
+
+  // ดึงบทความทั้งหมดของแต่ละภาษา เพื่อสร้าง sitemap entry ให้อัตโนมัติ
+  const thPosts = getAllPosts("th");
+  const enPosts = getAllPosts("en");
+
+  const thBlogEntries: MetadataRoute.Sitemap = thPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const enBlogEntries: MetadataRoute.Sitemap = enPosts.map((post) => ({
+    url: `${baseUrl}/en/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
 
   return [
     // ======================
@@ -24,6 +43,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/gallery`,
       lastModified,
       changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified,
+      changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     {
@@ -61,6 +86,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/en/blog`,
+      lastModified,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/en/reviews`,
       lastModified,
       changeFrequency: "monthly" as const,
@@ -72,5 +103,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly" as const,
       priority: 0.6,
     },
+
+    // ======================
+    // Blog posts (สร้างอัตโนมัติจากทุกบทความที่มีในระบบ)
+    // ======================
+    ...thBlogEntries,
+    ...enBlogEntries,
   ];
 }

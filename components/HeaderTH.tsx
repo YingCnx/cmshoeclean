@@ -26,7 +26,8 @@ export default function HeaderTH() {
           <nav className="flex gap-8 text-[13px] font-bold uppercase tracking-widest text-slate-600">
             <Link href="/" className="hover:text-[#27D7D0] transition-colors">Home</Link>
             <Link href="/services" className="hover:text-[#27D7D0] transition-colors">Services</Link>
-            <Link href="/gallery" className="hover:text-[#27D7D0] transition-colors">Gallery</Link>
+            <Link href="/gallery" className="hover:text-[#27D7D0] transition-colors">Gallery</Link>            
+            <Link href="/blog" className="hover:text-[#27D7D0] transition-colors">Blog</Link>
             <Link href="/reviews" className="hover:text-[#27D7D0] transition-colors">Reviews</Link>
             <Link href="/contact" className="hover:text-[#27D7D0] transition-colors">Contact</Link>
           </nav>
@@ -62,6 +63,7 @@ export default function HeaderTH() {
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
           <Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
+          <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
           <Link href="/reviews" onClick={() => setOpen(false)}>Reviews</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
           <div className="pt-6 border-t border-slate-100 flex justify-between items-center">

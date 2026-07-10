@@ -26,6 +26,7 @@ export default function HeaderEN() {
             <Link href="/en" className="hover:text-[#27D7D0]">Home</Link>
             <Link href="/en/services" className="hover:text-[#27D7D0]">Services</Link>
             <Link href="/en/gallery" className="hover:text-[#27D7D0]">Gallery</Link>
+            <Link href="/en/blog" className="hover:text-[#27D7D0]">Blog</Link>
             <Link href="/en/reviews" className="hover:text-[#27D7D0]">Reviews</Link>
             <Link href="/en/contact" className="hover:text-[#27D7D0]">Contact</Link>
           </nav>
@@ -57,6 +58,7 @@ export default function HeaderEN() {
           <Link href="/en" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/en/services" onClick={() => setOpen(false)}>Services</Link>
           <Link href="/en/gallery" onClick={() => setOpen(false)}>Gallery</Link>
+          <Link href="/en/blog" onClick={() => setOpen(false)}>Blog</Link>
           <Link href="/en/contact" onClick={() => setOpen(false)}>Contact</Link>
           <div className="pt-6 border-t flex justify-between items-center font-black">
              <div className="flex gap-4">
